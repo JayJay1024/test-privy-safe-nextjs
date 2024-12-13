@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@privy-io/react-auth':
         specifier: 1.96.2
-        version: 1.96.2(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))(@types/react@19.0.1)(bs58@5.0.0)(bufferutil@4.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)(use-sync-external-store@1.2.0(react@19.0.0))(utf-8-validate@5.0.10)(zod@3.24.1)
+        version: 1.96.2(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))(@types/react@19.0.1)(bs58@5.0.0)(bufferutil@4.0.8)(permissionless@0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)(use-sync-external-store@1.2.0(react@19.0.0))(utf-8-validate@5.0.10)(zod@3.24.1)
       next:
         specifier: 15.1.0
         version: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2406,6 +2406,12 @@ packages:
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
 
+  permissionless@0.2.22:
+    resolution: {integrity: sha512-6pyXxSXomHXmCgwST4/MM0CM3ISBhj8R0Il+g46RlDOZgVOWwwQxaVmbbg7vZBNulIg5PYFjVaFCNISc2Ia2uA==}
+    peerDependencies:
+      viem: ^2.21.54
+      webauthn-p256: 0.0.10
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -3884,7 +3890,7 @@ snapshots:
     dependencies:
       zod: 3.24.1
 
-  '@privy-io/js-sdk-core@0.35.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))':
+  '@privy-io/js-sdk-core@0.35.4(bufferutil@4.0.8)(permissionless@0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10))(utf-8-validate@5.0.10)(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))':
     dependencies:
       '@ethersproject/abstract-signer': 5.7.0
       '@ethersproject/bignumber': 5.7.0
@@ -3902,6 +3908,7 @@ snapshots:
       set-cookie-parser: 2.7.1
       uuid: 9.0.1
     optionalDependencies:
+      permissionless: 0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10)
       viem: 2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1)
     transitivePeerDependencies:
       - bufferutil
@@ -3918,7 +3925,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@privy-io/react-auth@1.96.2(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))(@types/react@19.0.1)(bs58@5.0.0)(bufferutil@4.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)(use-sync-external-store@1.2.0(react@19.0.0))(utf-8-validate@5.0.10)(zod@3.24.1)':
+  '@privy-io/react-auth@1.96.2(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))(@types/react@19.0.1)(bs58@5.0.0)(bufferutil@4.0.8)(permissionless@0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)(use-sync-external-store@1.2.0(react@19.0.0))(utf-8-validate@5.0.10)(zod@3.24.1)':
     dependencies:
       '@coinbase/wallet-sdk': 4.0.3
       '@ethersproject/abstract-signer': 5.7.0
@@ -3936,7 +3943,7 @@ snapshots:
       '@heroicons/react': 2.2.0(react@19.0.0)
       '@marsidev/react-turnstile': 0.4.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@metamask/eth-sig-util': 6.0.2
-      '@privy-io/js-sdk-core': 0.35.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))
+      '@privy-io/js-sdk-core': 0.35.4(bufferutil@4.0.8)(permissionless@0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10))(utf-8-validate@5.0.10)(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))
       '@simplewebauthn/browser': 9.0.1
       '@solana/wallet-adapter-base': 0.9.23(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))
       '@solana/wallet-standard-wallet-adapter-base': 1.1.2(@solana/web3.js@1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10))(bs58@5.0.0)
@@ -3971,6 +3978,7 @@ snapshots:
       zustand: 5.0.2(@types/react@19.0.1)(react@19.0.0)(use-sync-external-store@1.2.0(react@19.0.0))
     optionalDependencies:
       '@solana/web3.js': 1.95.8(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10)
+      permissionless: 0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6325,6 +6333,12 @@ snapshots:
   path-parse@1.0.7: {}
 
   pathe@1.1.2: {}
+
+  permissionless@0.2.22(viem@2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))(webauthn-p256@0.0.10):
+    dependencies:
+      viem: 2.21.54(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1)
+      webauthn-p256: 0.0.10
+    optional: true
 
   picocolors@1.1.1: {}
 
